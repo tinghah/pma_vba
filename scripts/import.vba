@@ -100,6 +100,10 @@ Public Sub ImportAndAutoClean()
     Else
         MsgBox "No relevant sheets found.", vbExclamation
     End If
+
+    On Error Resume Next
+    ThisWorkbook.Sheets("MAIN").Activate
+    On Error GoTo 0
 End Sub
 
 ' Helper: Forces ID and Code columns to Text format immediately after import

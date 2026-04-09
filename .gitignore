@@ -1,0 +1,15 @@
+# Standard temporary files to ignore
+~$*.xls*
+*.tmp
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Allow everything else (code, workbooks, scripts)
+!scripts/
+!*.xlsm
+!*.xlsx
+!*.xls
+!*.vba
+!*.txt

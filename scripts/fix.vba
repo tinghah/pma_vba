@@ -223,4 +223,8 @@ SkipSheet:
     Application.ScreenUpdating = True
     
     MsgBox "Processing complete. Leave sheets used strict mapping, OT/Late used dynamic mapping.", vbInformation, "Process Finished"
+    
+    On Error Resume Next
+    ThisWorkbook.Sheets("MAIN").Activate
+    On Error GoTo 0
 End Sub
